@@ -1,0 +1,34 @@
+{
+  "name": "kill-dev",
+  "version": "1.0.1",
+  "description": "A CLI tool to find and kill dev server processes on specified or common dev ports.",
+  "main": "index.js",
+  "bin": {
+    "kill-dev": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "kill",
+    "port",
+    "process",
+    "dev",
+    "server",
+    "nextjs",
+    "react",
+    "vite"
+  ],
+  "author": "Your Name / Your Org",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "find-process": "^1.4.7",
+    "inquirer": "^8.2.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
