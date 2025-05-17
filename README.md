@@ -2,6 +2,8 @@
 
 Are you also to dumb to remember simple kill ports command? I've got your back. A powerful CLI tool to find and kill development server processes on specified or common dev ports. 
 
+![Kill Dev Tool Preview](assets/preview.png)
+
 ## Features
 
 - 🔍 Automatically scans common development ports (Next.js, React, Vite)
@@ -11,23 +13,26 @@ Are you also to dumb to remember simple kill ports command? I've got your back. 
 
 ## Installation
 
-### Using GitHub Packages
-
-1. First, authenticate with GitHub Packages. Create or edit your `~/.npmrc` file:
+1. Install the package:
+This method is currently not available, you'll have to install it from the source code.
 ```bash
-@remcostoeten:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+npm install -g @remcostoeten/kill-development-ports
 ```
 
-2. Install the package:
-```bash
-npm install -g @remcostoeten/kill-dev
-```
+1. Install from source
 
-To create a GitHub token:
-1. Go to GitHub Settings → Developer Settings → Personal Access Tokens → Tokens (classic). Or click [here](https://github.com/settings/personal-access-tokens/new) (make sure you're logged in)
-2. Generate a new token with `read:packages` scope
-3. Copy the token and use it in your `.npmrc` file
+Clone the repository:
+```bash
+git clone https://github.com/remcostoeten/kill-development-ports.git
+cd kill-development-ports
+rm -rf assets README.md LICENSE
+npm i -g 
+echo 'reload terminal and you should be able to use the command'
+```
+If npm fails try `--force` or use `pnpm`.
+
+For other shortcuts add in your `.zshrc` or `.bashrc`
+`alias x='kill-dev'`
 
 ## Usage
 
