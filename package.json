@@ -1,10 +1,19 @@
 {
-  "name": "kill-dev",
-  "version": "1.0.1",
+  "name": "@remcostoeten/kill-development-ports",
+  "version": "1.0.0",
   "description": "A CLI tool to find and kill dev server processes on specified or common dev ports.",
+  "author": "Remco Stoeten",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remcostoeten/kill-development-ports"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "index.js",
   "bin": {
-    "kill-dev": "./index.js"
+    "kill-dev": "./index.js",
+    "kill-port": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -21,7 +30,10 @@
     "react",
     "vite"
   ],
-  "author": "Your Name / Your Org",
+  "bugs": {
+    "url": "https://github.com/remcostoeten/kill-dev/issues"
+  },
+  "homepage": "https://github.com/remcostoeten/kill-dev#readme",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
